@@ -1,0 +1,1 @@
+/home/ald/opt/weka-3-9-4/weka.sh

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+chosen=$(echo -e "[Cancel]\nShutdown\nReboot" | rofi -dmenu -i)
+
+if [[ $chosen = "Shutdown" ]]; then
+	systemctl poweroff
+elif [[ $chosen = "Reboot" ]]; then
+	systemctl reboot
+fi
